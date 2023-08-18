@@ -89,8 +89,17 @@ class _EspaciosState extends State<Espacios> {
                 titulo: "Estado",
               ),
               Padding(
-                padding: const EdgeInsets.fromLTRB(30, 20, 30, 0),
+                padding: const EdgeInsets.fromLTRB(30, 10, 30, 0),
                 child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    primary: const Color.fromRGBO(0, 26, 78, 1),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(40.0),
+                    ),
+                    elevation: 4.0, // Ajusta el valor según tu preferencia
+                    minimumSize: const Size(
+                        double.infinity, 50), // Ancho y alto mínimos del botón
+                  ),
                   onPressed: () {
                     // Lógica para el botón de "Crear"
                     print("Botón Crear presionado");

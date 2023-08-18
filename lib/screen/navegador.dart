@@ -1,4 +1,5 @@
 import 'package:apptower/screen/espacios.dart';
+import 'package:apptower/screen/login.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const Navegador());
@@ -46,7 +47,7 @@ class Navegador extends StatelessWidget {
                 titulo: "Espacios", widget: Espacios(), icono: Icons.apartment),
             Opcion(
                 titulo: "Salir",
-                widget: Text("jeje"),
+                widget: LogIn(),
                 icono: Icons.logout),
           ]),
         ),
